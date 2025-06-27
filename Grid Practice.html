@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas: 
+                "header header"
+                "menu content"
+                "footer footer";
+                grid-template-columns: 1fr 3fr;
+                gap: 4px;
+                background-color: rgb(0, 0, 0);
+                padding: 4px;
+            }
+            .container > div{
+                background-color:rgb(138, 250, 250);
+                padding: 4px;
+            }
+              .container > div.header{
+              grid-area: header;
+              text-align: center;
+              padding: 20px;
+              }
+              .container > div.menu {
+                grid-area: menu;
+                padding: 20px;
+                text-align:left;
+              }
+              .container > div.content {
+                grid-area: content;
+                padding: 20px;
+              }
+              .container>div.footer{
+                grid-area: footer;
+                padding: 20px;
+                text-align: center;
+              }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="header"><h2>My Header</h2></div>
+        <div class="menu"><a href="#">link1</a><br><a href="#">link2</a><br><a href="#"link3>link3</a>
+        </div>
+        <div class="content"><h2>Css Grid</h2><p>Grid is used in CSS to make the process easy and 
+            quick.</p><p>It consist of rows and columns.</p>
+        </div>
+        <div class="footer"><h2>Footer</h2></div>
+    </body>
+</html>
