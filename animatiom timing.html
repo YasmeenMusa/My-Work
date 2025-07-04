@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <style>
+            div{
+    height: 50px;
+    width: 100px;
+    background-color: green;
+    font-weight: bold;
+    position: relative;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+    .div1{animation-timing-function: linear;}
+    .div2 {animation-timing-function: ease;}
+    .div3{animation-timing-function: ease-in;}
+    .div4 {animation-timing-function: ease-out;}
+    .div5{animation-timing-function: ease-in-out;}
+
+@keyframes mymove{
+   to{left:0px}
+    from{left: 300px;}
+}
+        </style>
+    </head>
+    <body>
+        <h1>My Animation timing</h1>
+        <p>This will apply a time on the text.</p>
+        <div class="div1">linear</div>
+        <div class="div2"></div>
+        <div class="div3">ease-in</div>
+        <div class="div4">ease-out</div>
+        <div class="div5">ease-in-out</div>
+    </body>
+</html>
